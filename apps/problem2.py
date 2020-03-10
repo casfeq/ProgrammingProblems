@@ -1,6 +1,7 @@
 import sys,os
 sys.path.append(os.path.join(os.path.dirname(__file__),os.path.pardir))
-from libs.Random import *
+from libs.Random import randomSequence
+from libs.MonteCarlo import *
 
 size=10000
 
