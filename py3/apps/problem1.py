@@ -5,7 +5,7 @@ from libs.Random import *
 
 mean=10
 intervalSize=2
-distributionSize=100
+distributionSize=10
 
 randomNumbers=randomSequence(mean,intervalSize,distributionSize)
 empiricalMean=np.mean(randomNumbers)
