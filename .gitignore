@@ -1,0 +1,46 @@
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Compressed files
+*.tar.gz
+
+# Sublime files
+*.sublime-workspace
+
+# Other files
+*.sh
+*.xlsx
+
+# Folders
+build/
+debug/
+release/
+export/
+plot/
+__pycache__/
