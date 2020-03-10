@@ -38,6 +38,7 @@
 *.xlsx
 
 # Folders
+bin/
 build/
 debug/
 release/
