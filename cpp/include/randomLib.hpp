@@ -27,16 +27,15 @@ double sequenceEmpiricalMean(vector<double> distribution)
 	double empiricalMean;
 	if(size!=0) empiricalMean=accumulate(distribution.begin(),distribution.end(),0.0)/size;
 
-	cout << "empiricalMean=" << empiricalMean << "\n";
-
 	return empiricalMean;
 }
 
-vector<double> randomSequence(double mean, double intervalSize, int distributionSize)
+vector<double> randomSequence(double mean, double intervalSize, int distributionSize,
+	int gen)
 {
 	vector<double> distribution;
-	base_generator_type generator(19890425);
-	uniform_real<> uniform_distribution(0,intervalSize);
+	base_generator_type generator(gen);
+	uniform_real<> uniform_distribution(0,1);
 	variate_generator<base_generator_type&,uniform_real<>> fluctuation(generator,
 		uniform_distribution);
 
@@ -44,9 +43,6 @@ vector<double> randomSequence(double mean, double intervalSize, int distribution
 	{
 		distribution.push_back(mean+intervalSize*(fluctuation()-0.5));
 	}
-
-	printSequence(distribution);
-	sequenceEmpiricalMean(distribution);
-
+	
 	return distribution;
 }
