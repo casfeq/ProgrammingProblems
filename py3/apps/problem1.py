@@ -7,7 +7,7 @@ mean = 10
 intervalSize = 2
 distributionSize = 10
 
-randomNumbers = randomSequence(mean, intervalSize, distributionSize)
+randomNumbers = RandomSequence(mean, intervalSize, distributionSize)
 empiricalMean = np.mean(randomNumbers)
 
 print(randomNumbers)

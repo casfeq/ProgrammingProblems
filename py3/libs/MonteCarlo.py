@@ -1,4 +1,4 @@
-def monteCarloCircleArea(xPositions, yPositions):
+def MonteCarloCircleArea(xPositions, yPositions):
 	size = len(xPositions)
 	size1 = len(yPositions)
 	if size != size1:
